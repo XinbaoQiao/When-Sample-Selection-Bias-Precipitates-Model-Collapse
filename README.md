@@ -1,4 +1,5 @@
 # Quick Start Guide
+This repo provides the code for the paper "When Sample Selection Bias Precipitates Model Collapse".
 
 ## Environment Configuration
 
