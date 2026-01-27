@@ -49,7 +49,7 @@ python subexperiments/Calibrated_Gradient/ot_distance_analysis_single.py
 python main.py --experiment_type biased_verification --dataset cifar10 --data_strategy accumulate_subsample
 ```
 
-### 3. Run GEM Experiment
+### 3. Run GEM (Our Methods) Experiment
 
 ```bash
 # Scheme I: Local Greedy
