@@ -1,6 +1,6 @@
 # Quick Start Guide
 
-## 🛠️ Environment Configuration
+## Environment Configuration
 
 ```bash
 # Create environment
@@ -13,7 +13,7 @@ pip install -r requirements.txt
 
 Core Dependencies: `torch`, `torchvision`, `transformers`, `diffusers`, `geomloss`, `accelerate`, `pot`.
 
-## 🚀 Usage
+## Usage
 
 ### 1. Running Sub-experiments
 
