@@ -1,17 +1,6 @@
 """
 GEM (Geometric Ensemble Matching) Selector
 Based on: "When Sample Selection Bias Precipitates Model Collapse" (Chapter 4)
-
-This module implements GEM-based selection strategies using Wasserstein Geometry.
-Methodology:
-1. Collaborative Wasserstein Barycenter Estimation (Scheme II):
-   - Iteratively computes a privacy-preserving proxy (Barycenter) of the global distribution.
-   - Ref: "4_methodology.tex", Section 4.4
-2. Wasserstein-Gradient-Based Selection:
-   - Uses Calibrated Gradients of the Sinkhorn Divergence to score samples.
-   - Ref: "4_methodology.tex", Section 4.1 & Eq. 17
-   - Code Ref: RefCode/Data Valuation and Detections in Federated Learning/FedBary-main/detections.ipynb
-
 """
 
 import torch
