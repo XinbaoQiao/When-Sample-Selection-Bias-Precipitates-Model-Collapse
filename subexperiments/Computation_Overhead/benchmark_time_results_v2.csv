@@ -1,0 +1,37 @@
+Parameter,Value,Method,Time
+N (Candidates),10000,Greedy,6.7087297439575195
+N (Candidates),10000,Barycenter,2.0775976181030273
+N (Candidates),50000,Greedy,14.55356740951538
+N (Candidates),50000,Barycenter,10.385614395141602
+N (Candidates),100000,Greedy,24.849597454071045
+N (Candidates),100000,Barycenter,20.758789539337158
+N (Candidates),150000,Greedy,34.961058616638184
+N (Candidates),150000,Barycenter,31.10870122909546
+N (Candidates),200000,Greedy,45.31525158882141
+N (Candidates),200000,Barycenter,41.516676902770996
+M (Reference Size),1000,Greedy,24.68946075439453
+M (Reference Size),1000,Barycenter,20.653115272521973
+M (Reference Size),2000,Greedy,29.019282341003418
+M (Reference Size),2000,Barycenter,25.301764249801636
+M (Reference Size),5000,Greedy,45.38956165313721
+M (Reference Size),5000,Barycenter,41.51909685134888
+M (Reference Size),8000,Greedy,64.34908819198608
+M (Reference Size),8000,Barycenter,60.66265511512756
+M (Reference Size),10000,Greedy,79.65229034423828
+M (Reference Size),10000,Barycenter,75.91857290267944
+K (Clients),5,Greedy,45.02711319923401
+K (Clients),5,Barycenter,41.49692511558533
+K (Clients),10,Greedy,45.49962854385376
+K (Clients),10,Barycenter,41.522297859191895
+K (Clients),20,Greedy,45.82554531097412
+K (Clients),20,Barycenter,41.56514596939087
+K (Clients),50,Greedy,47.530702114105225
+K (Clients),50,Barycenter,41.772907733917236
+T (Iterations),1,Greedy,45.2897264957428
+T (Iterations),1,Barycenter,41.440542459487915
+T (Iterations),5,Greedy,44.623167991638184
+T (Iterations),5,Barycenter,41.42374324798584
+T (Iterations),10,Greedy,44.66772127151489
+T (Iterations),10,Barycenter,41.458513021469116
+T (Iterations),20,Greedy,44.57493209838867
+T (Iterations),20,Barycenter,41.42490339279175
