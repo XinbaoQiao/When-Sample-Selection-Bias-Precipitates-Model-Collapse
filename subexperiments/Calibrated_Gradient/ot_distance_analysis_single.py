@@ -177,11 +177,7 @@ class DPGEMSelector(GEMSelector):
         
 class OTDistanceAnalyzer:
     def __init__(self, device='cpu'):
-        # Fix random seed for reproducibility
-        np.random.seed(1)
-        torch.manual_seed(1)
-        if torch.cuda.is_available():
-            torch.cuda.manual_seed_all(1)
+ 
             
         self.device = device
         self.n_samples = 100
@@ -220,7 +216,7 @@ class OTDistanceAnalyzer:
         
         # Random sampling for P and Q
         # Total size 50000. Use 25000 each.
-        self.n_samples = 25000 # Set N to 25000 (Full Dataset Split)
+        self.n_samples = 5000 # Set N to 25000 (Full Dataset Split)
         
         indices = np.random.permutation(len(dataset))
         p_indices = indices[:self.n_samples]
