@@ -177,6 +177,12 @@ class DPGEMSelector(GEMSelector):
         
 class OTDistanceAnalyzer:
     def __init__(self, device='cpu'):
+        # Fix random seed for reproducibility
+        np.random.seed(1)
+        torch.manual_seed(1)
+        if torch.cuda.is_available():
+            torch.cuda.manual_seed_all(1)
+            
         self.device = device
         self.n_samples = 100
         
@@ -552,11 +558,24 @@ class OTDistanceAnalyzer:
         pred1_plot = pred1_dense[plot_indices]
         ax.scatter(x_dense_plot, pred1_plot, color='green', marker='o', s=scatter_size, 
                   alpha=0.4, edgecolors='black', linewidth=2.0, 
-                  label='Direct Gradient')
+                  label='Direct Gradient\nFID: 93')
         ax.set_title('(a) Direct Gradient', weight='bold', pad=25)
         ax.set_xlabel('Perturbation on Datapoint\nProbability Mass (%)', weight='bold')
         ax.set_ylabel('Change in OT dist.', weight='bold')
-        ax.legend(loc='upper left', framealpha=0.9)
+        
+        # Split legends
+        handles, labels = ax.get_legend_handles_labels()
+        # 1. Actual Change (Top Left)
+        h1 = [h for h, l in zip(handles, labels) if 'Actual' in l]
+        l1 = [l for h, l in zip(handles, labels) if 'Actual' in l]
+        legend1 = ax.legend(h1, l1, loc='upper left', framealpha=0.9)
+        ax.add_artist(legend1)
+        
+        # 2. Scatter (Bottom Right)
+        h2 = [h for h, l in zip(handles, labels) if 'Direct' in l]
+        l2 = [l for h, l in zip(handles, labels) if 'Direct' in l]
+        ax.legend(h2, l2, loc='lower right', framealpha=0.9, fontsize=42, markerfirst=True, handletextpad=0.2)
+        
         ax.grid(True, alpha=0.3)
         
         # (b) Proxy Gradient
@@ -570,10 +589,23 @@ class OTDistanceAnalyzer:
         pred2_plot = pred2_dense[plot_indices]
         ax.scatter(x_dense_plot, pred2_plot, color='#D32F2F', marker='o', s=scatter_size, 
                   alpha=0.4, edgecolors='black', linewidth=2.0, 
-                  label='Proxy Gradient')
+                  label='Proxy Gradient\nFID: 89')
         ax.set_title('(b) Proxy Gradient', weight='bold', pad=25)
         ax.set_xlabel('Perturbation on Datapoint\nProbability Mass (%)', weight='bold')
-        ax.legend(loc='upper left', framealpha=0.9)
+        
+        # Split legends
+        handles, labels = ax.get_legend_handles_labels()
+        # 1. Lines (Actual + Direct) -> Top Left
+        h1 = [h for h, l in zip(handles, labels) if 'Actual' in l or ('Direct' in l and 'FID' not in l)]
+        l1 = [l for h, l in zip(handles, labels) if 'Actual' in l or ('Direct' in l and 'FID' not in l)]
+        legend1 = ax.legend(h1, l1, loc='upper left', framealpha=0.9)
+        ax.add_artist(legend1)
+        
+        # 2. Scatter (Proxy) -> Bottom Right
+        h2 = [h for h, l in zip(handles, labels) if 'Proxy' in l]
+        l2 = [l for h, l in zip(handles, labels) if 'Proxy' in l]
+        ax.legend(h2, l2, loc='lower right', framealpha=0.9, fontsize=42, markerfirst=True, handletextpad=0.2)
+        
         ax.grid(True, alpha=0.3)
         
         # (c) Privacy Trade-off
@@ -610,10 +642,10 @@ class OTDistanceAnalyzer:
                 sc = ax.scatter(x_dense_plot, pred_dp_plot, color=colors[i], marker=markers[i], 
                           s=scatter_size, alpha=0.4, edgecolors='black', linewidth=2.0)
                 dp_handles.append(sc)
-                dp_labels.append(f'Proxy Gradient ($\epsilon={eps}$)')
+                dp_labels.append(f'Proxy Gradient ($\epsilon={eps}$)\nFID: 90')
         
         # Create second legend (Bottom Right)
-        ax.legend(dp_handles, dp_labels, loc='lower right', framealpha=0.9, fontsize=37)
+        ax.legend(dp_handles, dp_labels, loc='lower right', framealpha=0.9, fontsize=42, markerfirst=True, handletextpad=0.2)
         
         ax.set_title('(c) Privacy Trade-off', weight='bold', pad=25)
         ax.set_xlabel('Perturbation on Datapoint\nProbability Mass (%)', weight='bold')
