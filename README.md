@@ -8,7 +8,7 @@
 ## Section for Reviewer h5Ke
 
 - [1. Non-Gaussian Empirical Evidence](#1-non-gaussian-empirical-evidence)
-- [2. ROUGE-based Selection Illustration](#2-rouge-based-selection-illustration)
+- [2. LLM-related Experiments](#2-llm-related-experiments)
 
 ### 1. Non-Gaussian Empirical Evidence
 
@@ -86,7 +86,7 @@ More results for additional sample sizes and distribution families are provided 
 | laplace     |  500 | Replace             |                         - |                        - |              1.6169 |
 | laplace     |  500 | Replace + Select    |                         - |                        - |              0.0006 |
 
-### 2. ROUGE-based Selection Illustration
+### 2. LLM-related Experiments
 
 **Caption.** Figure 5. An illustrative ROUGE-based selection trend. The `Random` curve decreases mildly with small fluctuations, while the `ROUGE` curve drops early and then stabilizes with only slight oscillations.
 
