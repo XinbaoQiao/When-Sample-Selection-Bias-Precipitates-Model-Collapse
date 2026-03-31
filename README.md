@@ -93,6 +93,8 @@ More results for additional sample sizes and distribution families are provided 
 
 **Caption.** Table 3. Illustrative underrepresented-language result. Selection based on an English-local verifier can improve in-domain alignment while degrading broader language coverage.
 
+The table reports ROUGE-1 on Welsh after recursive training with an English-local verifier.
+
 | Setting | Underrepresented Language Score |
 | --- | ---: |
 | Random | 0.274 |
