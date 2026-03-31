@@ -91,11 +91,12 @@ More results for additional sample sizes and distribution families are provided 
   <img src="rouge_random_vs_iteration.png" alt="Figure 5: ROUGE-based selection illustration" width="640">
 </p>
 
-**Caption.** Figure 6. An illustrative underrepresented-language trend. `Random` degrades gradually, while `ROUGE` drops more sharply at early iterations and then plateaus at a lower level.
+**Caption.** Table 3. Illustrative underrepresented-language result. Selection based on an English-local verifier can improve in-domain alignment while degrading broader language coverage.
 
-<p align="center">
-  <img src="rouge_random_other_language_vs_iteration.png" alt="Figure 6: underrepresented-language illustration" width="640">
-</p>
+| Setting | Underrepresented Language Score |
+| --- | ---: |
+| Random | 0.274 |
+| ROUGE | 0.233 |
 
 
 ## Section for Reviewer pAu7
