@@ -1,11 +1,7 @@
 # Rebuttal Navigation
 
-- [Reviewer h5Ke](https://openreview.net/forum?id=FFXvnzM254&noteId=TeAn8zXMan)
-  - [Non-Gaussian empirical evidence](subexperiments/NonGaussian_Modeling/rebuttal_non_gaussian_results.md)
-  - [Topic-generalization illustration](rouge_random_vs_iteration.png)
-- [Reviewer pAu7](https://openreview.net/forum?id=FFXvnzM254&noteId=OLScpgg2Gs)
-  - [Non-Gaussian empirical evidence](subexperiments/NonGaussian_Modeling/rebuttal_non_gaussian_results.md)
-  - [Additional non-Gaussian figures and tables](subexperiments/NonGaussian_Modeling/results_recursive_family_n100_n300_n500/)
+- [Reviewer h5Ke](https://openreview.net/forum?id=FFXvnzM254&noteId=TeAn8zXMan): [reviewer_h5ke.md](reviewer_h5ke.md)
+- [Reviewer pAu7](https://openreview.net/forum?id=FFXvnzM254&noteId=OLScpgg2Gs): [reviewer_pau7.md](reviewer_pau7.md)
 
 ---
 
