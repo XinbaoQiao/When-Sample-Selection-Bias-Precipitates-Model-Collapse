@@ -88,7 +88,13 @@ More results for additional sample sizes and distribution families are provided 
 **Caption.** Figure 5. An illustrative ROUGE-based selection trend. The `Random` curve decreases mildly with small fluctuations, while the `ROUGE` curve drops early and then stabilizes with only slight oscillations.
 
 <p align="center">
-  <img src="subexperiments/NonGaussian_Modeling/rouge_random_vs_iteration.png" alt="Figure 5: ROUGE-based selection illustration" width="640">
+  <img src="rouge_random_vs_iteration.png" alt="Figure 5: ROUGE-based selection illustration" width="640">
+</p>
+
+**Caption.** Figure 6. An illustrative underrepresented-language trend. `Random` degrades gradually, while `ROUGE` drops more sharply at early iterations and then plateaus at a lower level.
+
+<p align="center">
+  <img src="rouge_random_other_language_vs_iteration.png" alt="Figure 6: underrepresented-language illustration" width="640">
 </p>
 
 
