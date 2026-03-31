@@ -7,6 +7,9 @@
 
 ## Section for Reviewer h5Ke
 
+- [1. Non-Gaussian Empirical Evidence](#1-non-gaussian-empirical-evidence)
+- [2. ROUGE-based Selection Illustration](#2-rouge-based-selection-illustration)
+
 ### 1. Non-Gaussian Empirical Evidence
 
 We group the non-Gaussian experiments into three families: mixture-of-Gaussians / multimodal (`gmm`, `unequal_gmm`), heavy-tailed (`laplace`), and a structured Gaussian control (`anisotropic`). Empirically, the diversity-collapse phenomenon remains robust across all tested families: biased selection sharply reduces the $\text{Dispersion Ratio} = \mathrm{Disp}(P_t) / \mathrm{Disp}(P_0)$, often to values near zero. We treat these results as empirical robustness checks rather than direct extensions of the Gaussian power-law theory.
@@ -93,11 +96,11 @@ More results for additional sample sizes and distribution families are provided 
 
 **Caption.** Table 3. Illustrative underrepresented-language result. Selection based on an English-local verifier can improve in-domain alignment while degrading broader language coverage.
 
-The table reports ROUGE-1 on `Welsh` after recursive training with an English-local verifier.
+The table reports ROUGE-1 on Welsh after recursive training with an English-local verifier.
 
 | Setting | Underrepresented Language Score |
 | --- | ---: |
-| Random | 0.274 |
+| Random | 0.257 |
 | ROUGE | 0.223 |
 
 
