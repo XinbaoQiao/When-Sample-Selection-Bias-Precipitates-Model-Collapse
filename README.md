@@ -88,13 +88,13 @@ More results for additional sample sizes and distribution families are provided 
 
 ### 2. LLM-related Experiments
 
-**Caption.** Figure 5. An illustrative ROUGE-based selection trend. The `Random` curve decreases mildly with small fluctuations, while the `ROUGE` curve drops early and then stabilizes with only slight oscillations.
+**Caption.** Figure 5. An illustrative topic-generalization trend on held-out non-tech topics after recursive training with a tech-local verifier. The `Random` curve decreases mildly with small fluctuations, while the `ROUGE` curve drops early and then stabilizes at a lower level.
 
 <p align="center">
   <img src="rouge_random_vs_iteration.png" alt="Figure 5: ROUGE-based selection illustration" width="640">
 </p>
 
-**Caption.** Table 3. Illustrative underrepresented-language result. Selection based on an English-local verifier can improve in-domain alignment while degrading broader language coverage.
+**Caption.** Table 3. Illustrative language-generalization result. Selection based on an English-local verifier can improve in-domain alignment while degrading broader language coverage.
 
 The table reports ROUGE-1 on Welsh after recursive training with an English-local verifier.
 
