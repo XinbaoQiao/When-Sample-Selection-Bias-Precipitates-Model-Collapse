@@ -2,11 +2,11 @@
 
 This directory contains recursive collapse experiments beyond the single isotropic Gaussian setting. The main figure uses `Dispersion Ratio` as the vertical axis:
 
-\[
+$$
 \mathrm{Dispersion\ Ratio} = \mathrm{Disp}(P_t) / \mathrm{Disp}(P_0),
 \quad
 \mathrm{Disp}(P) = \mathbb{E}\|X - X'\|^2.
-\]
+$$
 
 Interpretation:
 - `Dispersion Ratio = 1` means the sample spread is comparable to the initial data distribution.
