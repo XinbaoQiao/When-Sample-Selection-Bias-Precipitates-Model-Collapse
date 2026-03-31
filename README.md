@@ -7,30 +7,30 @@
 
 ## Section for Reviewer h5Ke
 
-- Non-Gaussian robustness results: [rebuttal_non_gaussian_results.md](rebuttal_non_gaussian_results.md)
-- Additional non-Gaussian figures and tables: [results_recursive_family_n100_n300_n500/](results_recursive_family_n100_n300_n500/)
+- Non-Gaussian robustness results: [rebuttal_non_gaussian_results.md](subexperiments/nongaussin/rebuttal_non_gaussian_results.md)
+- Additional non-Gaussian figures and tables: [results_recursive_family_n100_n300_n500/](subexperiments/nongaussin/results_recursive_family_n100_n300_n500/)
 
 ## Section for Reviewer pAu7
 
-More results for additional sample sizes and distribution families are provided in results_recursive_family_n100_n300_n500/
+More results for additional sample sizes and distribution families are provided in `subexperiments/nongaussin/results_recursive_family_n100_n300_n500/`.
 
 Non-Gaussian recursive-fitting results further support the same empirical pattern: biased selection consistently drives a sharp reduction in diversity, while `Accumulate` without selection remains substantially more stable. We report $\text{Dispersion Ratio} = \mathrm{Disp}(P_t) / \mathrm{Disp}(P_0)$ as the main diversity-collapse metric, where smaller values indicate stronger collapse. See 
 
 **Caption.** Figure 1. Structured Gaussian control (`anisotropic`, `n = 300`). Selection sharply reduces the dispersion ratio, while `Accumulate` remains close to the initial spread.
 
-![Figure 1: anisotropic n=300](results_recursive_family_n100_n300_n500/n300/anisotropic/dispersion_collapse.png)
+![Figure 1: anisotropic n=300](subexperiments/nongaussin/results_recursive_family_n100_n300_n500/n300/anisotropic/dispersion_collapse.png)
 
 **Caption.** Figure 2. Balanced Gaussian mixture (`gmm`, `n = 300`). The non-Gaussian multimodal setting shows the same qualitative collapse pattern under biased selection.
 
-![Figure 2: gmm n=300](results_recursive_family_n100_n300_n500/n300/gmm/dispersion_collapse.png)
+![Figure 2: gmm n=300](subexperiments/nongaussin/results_recursive_family_n100_n300_n500/n300/gmm/dispersion_collapse.png)
 
 **Caption.** Figure 3. Unequal-weight Gaussian mixture (`unequal_gmm`, `n = 300`). This setting additionally probes whether selection disproportionately removes a minority mode; the sharp drop in dispersion ratio is again clearly visible.
 
-![Figure 3: unequal_gmm n=300](results_recursive_family_n100_n300_n500/n300/unequal_gmm/dispersion_collapse.png)
+![Figure 3: unequal_gmm n=300](subexperiments/nongaussin/results_recursive_family_n100_n300_n500/n300/unequal_gmm/dispersion_collapse.png)
 
 **Caption.** Figure 4. Heavy-tailed Laplace family (`laplace`, `n = 300`). Selection still produces an extreme diversity collapse, even though the unselected `Replace` trajectory is less stable than in the mixture settings.
 
-![Figure 4: laplace n=300](results_recursive_family_n100_n300_n500/n300/laplace/dispersion_collapse.png)
+![Figure 4: laplace n=300](subexperiments/nongaussin/results_recursive_family_n100_n300_n500/n300/laplace/dispersion_collapse.png)
 
 **Caption.** Table 1. Final dispersion ratios at iteration `t = 200`. Lower values indicate stronger diversity collapse.
 
