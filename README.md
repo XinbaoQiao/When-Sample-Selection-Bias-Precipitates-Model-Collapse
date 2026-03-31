@@ -1,7 +1,7 @@
 # Rebuttal Navigation
 
-- [Reviewer h5Ke](https://openreview.net/forum?id=FFXvnzM254&noteId=TeAn8zXMan): [reviewer_h5ke.md](reviewer_h5ke.md)
-- [Reviewer pAu7](https://openreview.net/forum?id=FFXvnzM254&noteId=OLScpgg2Gs): [reviewer_pau7.md](reviewer_pau7.md)
+- [Reviewer h5Ke](https://openreview.net/forum?id=FFXvnzM254&noteId=TeAn8zXMan): Please See [reviewer_h5ke.md](reviewer_h5ke.md)
+- [Reviewer pAu7](https://openreview.net/forum?id=FFXvnzM254&noteId=OLScpgg2Gs): Please See [reviewer_pau7.md](reviewer_pau7.md)
 
 ---
 
