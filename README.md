@@ -96,7 +96,7 @@ More results for additional sample sizes and distribution families are provided 
 | Setting | Underrepresented Language Score |
 | --- | ---: |
 | Random | 0.274 |
-| ROUGE | 0.233 |
+| ROUGE | 0.223 |
 
 
 ## Section for Reviewer pAu7
