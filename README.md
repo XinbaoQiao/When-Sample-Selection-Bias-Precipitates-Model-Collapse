@@ -83,6 +83,14 @@ More results for additional sample sizes and distribution families are provided 
 | laplace     |  500 | Replace             |                         - |                        - |              1.6169 |
 | laplace     |  500 | Replace + Select    |                         - |                        - |              0.0006 |
 
+### 2. ROUGE-based Selection Illustration
+
+**Caption.** Figure 5. An illustrative ROUGE-based selection trend. The `Random` curve decreases mildly with small fluctuations, while the `ROUGE` curve drops early and then stabilizes with only slight oscillations.
+
+<p align="center">
+  <img src="subexperiments/NonGaussian_Modeling/rouge_random_vs_iteration.png" alt="Figure 5: ROUGE-based selection illustration" width="640">
+</p>
+
 
 ## Section for Reviewer pAu7
 
