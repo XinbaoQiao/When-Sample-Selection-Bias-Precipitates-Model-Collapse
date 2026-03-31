@@ -1,7 +1,12 @@
-# Rebuttal Navigation
+# Rebuttal Content
 
-- [Reviewer h5Ke](https://openreview.net/forum?id=FFXvnzM254&noteId=TeAn8zXMan): please see the section below on this page.
-- [Reviewer pAu7](https://openreview.net/forum?id=FFXvnzM254&noteId=OLScpgg2Gs): please see the section below on this page.
+- [Reviewer h5Ke](https://openreview.net/forum?id=FFXvnzM254&noteId=TeAn8zXMan): please see [Section for Reviewer h5Ke](#section-for-reviewer-h5ke).
+- [Reviewer pAu7](https://openreview.net/forum?id=FFXvnzM254&noteId=OLScpgg2Gs): please see [Section for Reviewer pAu7](#section-for-reviewer-pau7).
+
+Anonymous GitHub mirrors may render anchor links inconsistently. If the jump does not work, please scroll to the corresponding reviewer section below.
+
+- [Jump to Reviewer h5Ke](#section-for-reviewer-h5ke)
+- [Jump to Reviewer pAu7](#section-for-reviewer-pau7)
 
 ---
 
