@@ -1,7 +1,11 @@
 # Rebuttal Navigation
 
-- [Reviewer h5Ke](https://openreview.net/forum?id=FFXvnzM254&noteId=TeAn8zXMan): see [Section for Reviewer h5Ke](#section-for-reviewer-h5ke)
-- [Reviewer pAu7](https://openreview.net/forum?id=FFXvnzM254&noteId=OLScpgg2Gs): see [Section for Reviewer pAu7](#section-for-reviewer-pau7)
+- [Reviewer h5Ke](https://openreview.net/forum?id=FFXvnzM254&noteId=TeAn8zXMan)
+  - [Non-Gaussian empirical evidence](subexperiments/NonGaussian_Modeling/rebuttal_non_gaussian_results.md)
+  - [Topic-generalization illustration](rouge_random_vs_iteration.png)
+- [Reviewer pAu7](https://openreview.net/forum?id=FFXvnzM254&noteId=OLScpgg2Gs)
+  - [Non-Gaussian empirical evidence](subexperiments/NonGaussian_Modeling/rebuttal_non_gaussian_results.md)
+  - [Additional non-Gaussian figures and tables](subexperiments/NonGaussian_Modeling/results_recursive_family_n100_n300_n500/)
 
 ---
 
@@ -96,7 +100,7 @@ More results for additional sample sizes and distribution families are provided 
 
 **Caption.** Table 3. Illustrative language-generalization result. Selection based on an English-local verifier can improve in-domain alignment while degrading broader language coverage.
 
-The table reports ROUGE-1 on `Welsh` after recursive training with an English-local verifier.
+The table reports ROUGE-1 on Welsh after recursive training with an English-local verifier.
 
 | Setting | Underrepresented Language Score |
 | --- | ---: |
