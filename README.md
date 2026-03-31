@@ -9,7 +9,7 @@
 
 ### 1. Non-Gaussian Empirical Evidence
 
-We group the non-Gaussian experiments into three families: mixture-of-Gaussians / multimodal (`gmm`, `unequal_gmm`), heavy-tailed (`laplace`), and a structured Gaussian control (`anisotropic`). Empirically, the diversity-collapse phenomenon remains robust across all tested families: biased selection sharply reduces the `Dispersion Ratio = \mathrm{Disp}(P_t) / \mathrm{Disp}(P_0)`, often to values near zero. We treat these results as empirical robustness checks rather than direct extensions of the Gaussian power-law theory.
+We group the non-Gaussian experiments into three families: mixture-of-Gaussians / multimodal (`gmm`, `unequal_gmm`), heavy-tailed (`laplace`), and a structured Gaussian control (`anisotropic`). Empirically, the diversity-collapse phenomenon remains robust across all tested families: biased selection sharply reduces the $\text{Dispersion Ratio} = \mathrm{Disp}(P_t) / \mathrm{Disp}(P_0)$, often to values near zero. We treat these results as empirical robustness checks rather than direct extensions of the Gaussian power-law theory.
 
 More results for additional sample sizes and distribution families are provided in `subexperiments/NonGaussian_Modeling/results_recursive_family_n100_n300_n500/`.
 
@@ -88,7 +88,7 @@ More results for additional sample sizes and distribution families are provided 
 
 ### 1. Non-Gaussian Empirical Evidence
 
-We group the non-Gaussian experiments into three families: mixture-of-Gaussians / multimodal (`gmm`, `unequal_gmm`), heavy-tailed (`laplace`), and a structured Gaussian control (`anisotropic`). Empirically, the diversity-collapse phenomenon remains robust across all tested families: biased selection sharply reduces the `Dispersion Ratio = \mathrm{Disp}(P_t) / \mathrm{Disp}(P_0)`, often to values near zero. We treat these results as empirical robustness checks rather than direct extensions of the Gaussian power-law theory.
+We group the non-Gaussian experiments into three families: mixture-of-Gaussians / multimodal (`gmm`, `unequal_gmm`), heavy-tailed (`laplace`), and a structured Gaussian control (`anisotropic`). Empirically, the diversity-collapse phenomenon remains robust across all tested families: biased selection sharply reduces the $\text{Dispersion Ratio} = \mathrm{Disp}(P_t) / \mathrm{Disp}(P_0)$, often to values near zero. We treat these results as empirical robustness checks rather than direct extensions of the Gaussian power-law theory.
 
 More results for additional sample sizes and distribution families are provided in `subexperiments/NonGaussian_Modeling/results_recursive_family_n100_n300_n500/`.
 
