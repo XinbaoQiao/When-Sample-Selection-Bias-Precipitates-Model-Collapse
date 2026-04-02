@@ -14,6 +14,7 @@ Anonymous GitHub mirrors may render anchor links inconsistently. If the jump doe
 
 - [1. Non-Gaussian Empirical Evidence](#1-non-gaussian-empirical-evidence)
 - [2. LLM-related Experiments](#2-llm-related-experiments)
+- [3. Weak-initializer Experiments](#3-weak_initializer_experiments)
 
 ### 1. Non-Gaussian Empirical Evidence
 
@@ -107,6 +108,23 @@ The table reports ROUGE-1 on Welsh after recursive training with an English-loca
 | --- | ---: |
 | Random | 0.257 |
 | ROUGE | 0.223 |
+
+### 3. Weak-initializer Experiments
+
+| STL-10   | FID  |
+| -------- | ---- |
+| CenterM. | 138  |
+| CovM.    | 121  |
+| Random   | 132  |
+| Scheme I | 95  |
+
+
+|CelebA   | FID  |
+| -------- | ---- |
+| CenterM. | 121  |
+| CovM.    | 93  |
+| Random   | 129  |
+| Scheme I | 89  |
 
 
 ## Section for Reviewer pAu7
